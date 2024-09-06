@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Query</title>
+
+    <style>
+
+        body{
+            background-color: lightblue;
+        }
+
+        h1{
+            font-size: 100px;
+        }
+
+        .img img{
+
+            width: 100%;
+            max-width: 100%;
+
+        }
+
+        .img-pequena{
+            display: none;
+        }
+
+        /* Para telas de até maximo 500px ou menos*/
+
+        @media (max-width:500px){
+
+            body{
+                background-color: lightgreen;
+                color: #fff
+            }
+
+            h1{
+                font-size: 50px;
+            }
+
+
+            .img-pequena{
+
+                display: block;
+
+            }
+
+            .img-grande{
+
+                display: none;
+
+            }
+            
+        }
+
+        /* Especifico para celulares 
+
+        @media (min-widht: 0px) and (max-width: 767){
+
+            body{
+                background-color: lightcoral;
+                color: #fff
+            }
+
+            h1{
+                font-size: 50px;
+            }
+        }
+
+        /* Especifico para monitores 
+
+        @media (min-widht: 1024){
+
+            body{
+                background-color: lightsalmon;
+                color: #fff
+            }
+
+            h1{
+                font-size: 150px;
+            }
+            
+        }   */
+
+    </style>
+
+</head>
+<body>
+    
+    <h1> Media Queries</h1>
+
+    <div class="img img-grande">
+        <img src="https://placehold.co/1000x400" alt="image">
+    </div>
+
+    <div class="img img-pequena">
+        <img src="https://placehold.co/500x400" alt="image">
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Consequuntur obcaecati commodi illum mollitia vitae maxime porro itaque magni,
+    sint in ad est. Magni quia incidunt, quae consectetur iusto voluptatum dolorum?</p>
+
+</body>
+</html>
